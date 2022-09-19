@@ -11,12 +11,12 @@ func main() {
 	watigroup := &sync.WaitGroup{}
 	mut := &sync.RWMutex{}
 
-	mut.RLock()
+	// mut.RLock()
 	var score = []int{0}
-	mut.RUnlock()
+	// mut.RUnlock()
 
 	// add three go function in Waitgroup...
-	watigroup.Add(3)
+	watigroup.Add(4)
 
 	go func(waitgroup *sync.WaitGroup, m *sync.RWMutex) {
 		fmt.Println("One routin")
