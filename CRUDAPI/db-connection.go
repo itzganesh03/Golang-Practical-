@@ -10,7 +10,7 @@ import (
 )
 
 var Database *gorm.DB
-var urlDSN = "root:admin@tcp(localhost:3306)/golang_assignment?parseTime=true"
+var urlDSN = "root:admin@tcp(localhost:50000)/golang_assignment?parseTime=true"
 var err error
 
 func DataMigration() {
