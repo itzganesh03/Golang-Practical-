@@ -7,11 +7,11 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 app.get('/', (req, res) => {
-  res.status(200).send("Welcome to LearnCodeonline server")
+  res.status(200).send("Welcome to golang practical")
 })
 
 app.get('/get', (req, res) => {
-    res.status(200).json({message: "Hello from learnCodeonline.in"})
+    res.status(200).json({message: "Hello from coder"})
   })
 
 
